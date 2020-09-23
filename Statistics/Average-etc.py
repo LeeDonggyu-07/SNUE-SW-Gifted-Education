@@ -16,7 +16,7 @@ print(harmonic_mean)
 V=((arith_mean-4)**2+(arith_mean-10)**2+(arith_mean-20)**2+(arith_mean-15)**2)/4
 print(V)
 
-#최빈값과 반복 횟수, 중앙값 : 10, 8, 5, 4, 3, 6, 8, 7, 8, 6, 7, 9, 6, 8을 기준으로
+#최빈값과 반복 횟수, 중앙값, 최소/최대값/범위 : 10, 8, 5, 4, 3, 6, 8, 7, 8, 6, 7, 9, 6, 8을 기준으로
 
 #최빈값과 반복 횟수
 num_list=[10, 8, 5, 4, 3, 6, 8, 7, 8, 6, 7, 9, 6, 8]
@@ -37,3 +37,16 @@ else:
   median=(numlist[int(n/2)-1]*numlist[int(n/2)])/2
 
 print(median)
+
+#최소값과 최대값, 범위
+count=1
+max=num_list[0]
+min=num_list[0]
+wile count < len(num_list):
+  if max < num_list[count]:
+    max=num_list[count]
+  if min > num_list[count]:
+    min=num_list[count]
+  count=count+1
+  
+  print("최소값 : ", min, "최대값 :", max, "범위 : ", max-min
